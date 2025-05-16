@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula05 - Layout com CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: black;
+            color: white;
+            /* Alinhamento de Texto */
+            text-align: center;
+            /* Estilo de Fonte do Texto - Arial e etc */
+            font-family: Arial, Helvetica, sans-serif;
+            /* Para cada 1em = 16px */
+            font-size: 1em;
+            /* Weight - Peso da Fonte */
+            font-weight: bold;
+            /* Margin e Padding */
+            /* margin: 10px;
+            margin-top: 20px;
+            margin-left: 30px;
+            margin-right: 100px;
+            margin-bottom: 300px; */
+            margin: 10px 15px;
+            padding: 20px;
+        }
+        header p {
+            color: red;
+        }
+        main {
+            margin: 10px;
+            padding: 10px;
+            /* Adicionando Bordas */
+            border: 1px solid black;
+            /* Bordas Arredondadas */
+            border-radius: 20px;
+            /* width - Largura do Elemento */
+            width: 80%;
+            /* height - Altura do Elemento */
+            height: 150px;
+            padding: 10px;
+            margin: 0 auto;
+        }
+        footer {
+            color: blue;
+        }
+        /* O # referência o id */
+        #text-color-green {
+            color: green;
+        }
+        /* O ponto ( . ) referência a class */
+        footer p.text-color-red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>DigitalStore</h2>
+        <p>Menu</p>
+    </header>
+    <main>
+        <h3>Conteúdo</h3>
+    </main>
+    <footer>
+        <p id="text-color-green">Texto 1</p>
+        <p class="text-color-red">Texto 2</p>
+        <p>Texto 3</p>
+        <p class="text-color-red">Texto 4</p>
+    </footer>
+</body>
+</html>
